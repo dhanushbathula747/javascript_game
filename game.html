@@ -1,9 +1,9 @@
 <html>
 <canvas id="gameCanvas" width="800" height="600"></canvas>
 
-	
+
 <script>
-var canvas;
+var canvas;//creating the space.
 var canvasContext;
 var ballX = 50;
 var ballSpeedX = 10;// to control the ball speed.
@@ -60,7 +60,7 @@ window.onload = function() {
 }
 
 
-
+//function for the ball and setting.
 function callBoth() {
 		moveEverything();
 		drawEverything();
@@ -79,7 +79,7 @@ function ballReset() {
 	ballY = canvas.height/2;
 }
 
-
+//Having the movement for computer.
 function computermovement() {
 	var paddle2YCenter = paddle2Y + (PADDLE_HEIGHT/2);
 	if(paddle2YCenter < ballY) {
