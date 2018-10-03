@@ -1,6 +1,7 @@
 <html>
 <canvas id="gameCanvas" width="800" height="600"></canvas>
 
+	
 <script>
 var canvas;
 var canvasContext;
@@ -10,10 +11,10 @@ var ballY = 50;
 var ballSpeedY = 4; // to control ball speed(vertical).
 var player1score=0;
 var player2score=0;
-const WINNING_SCORE=3;
+const WINNING_SCORE=3;//keeping the game score constant
 
 var showingWinScreen = false;
-
+//Assigning the height and width 
 var paddle1Y = 250;
 var paddle2Y = 250;
 const PADDLE_HEIGHT = 100;
@@ -21,7 +22,7 @@ const PADDLE_WIDTH = 10;
 
 
 
-
+//Mouse Movements
 function calculateMousePos(evt) {
 		var rect = canvas.getBoundingClientRect();
 		var root = document.documentElement;
